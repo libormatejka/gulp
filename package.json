@@ -1,0 +1,14 @@
+{
+  "name": "LM-gulp",
+  "version": "0.0.1",
+  "description": "Základní devstack pro další vývoj.",
+  "author": "Libor Matejka",
+  "devDependencies": {
+    "autoprefixer": "^8.6.5",
+    "browser-sync": "^2.24.5",
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sourcemaps": "1.7.x"
+  }
+}

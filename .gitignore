@@ -1,0 +1,5 @@
+# Ignore these files in all project
+node_modules/
+npm-shrinkwrap.json
+
+
