@@ -7,11 +7,11 @@ var settings = {
     watch: ['*.html', '*.htm', '*.php']
   },
   css: {
-    source: 'css/styles.scss',
+    source: 'css/src/style.scss',
     target: 'css/',
-    filename: 'styles-final.css',
-    watch: ['css/**/*.scss', 'css/**/*.css', '!css/styles.css'],
-    components: 'css/components/**/*.scss'
+    filename: 'css/style.css',
+    watch: ['css/src/**/*.scss', 'css/src/**/*.css', '!css/styles.css'],
+    components: 'css/src/**/*.scss'
   }
 };
 
@@ -60,8 +60,8 @@ gulp.task('makecss', function () {
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(postcss(postcssPlugins))
-    .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./css'));
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest( settings.css.target));
 
 });
 
